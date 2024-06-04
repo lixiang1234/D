@@ -1,0 +1,163 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26454",
+          "message": {
+            "text": "算术溢出: “-”操作在编译时生成负的无符号结果(io.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/source/repos/Animate/Animate/Animate.cpp"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CMainWindow::GetThisMessageMap",
+                  "decoratedName": "?GetThisMessageMap@CMainWindow@@KGPBUAFX_MSGMAP@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26454",
+          "message": {
+            "text": "算术溢出: “-”操作在编译时生成负的无符号结果(io.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/source/repos/Animate/Animate/Animate.cpp"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CMainWindow::GetThisMessageMap",
+                  "decoratedName": "?GetThisMessageMap@CMainWindow@@KGPBUAFX_MSGMAP@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 CMainWindow::nCOUNT。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/source/repos/Animate/Animate/Animate.cpp"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CMainWindow::{ctor}",
+                  "decoratedName": "??0CMainWindow@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "CMainWindow::nCOUNT"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 CMainWindow::nCurrPos。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/source/repos/Animate/Animate/Animate.cpp"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CMainWindow::{ctor}",
+                  "decoratedName": "??0CMainWindow@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "CMainWindow::nCurrPos"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33135.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/source/repos/Animate/Animate/Animate.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "cdae5db8c726fefca84eef498849439c977eee3b3d6ca2ddbbacc7ff34f875aa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/source/repos/animate/animate/animate.h"
+          },
+          "hashes": {
+            "sha-256": "650ecbac5e53efa68ac7d85286c98eefef99181b9d89cdef37175524fdc141da"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/source/repos/animate/animate/resource.h"
+          },
+          "hashes": {
+            "sha-256": "c67beb643327ac1ba381ed7ed8bee7822f3a6368bd30bb17a41f665f785472ae"
+          }
+        }
+      ]
+    }
+  ]
+}
